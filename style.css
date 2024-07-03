@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inknut Antiqua", serif;
+
+}
+
+.main-container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    background: #C7C0C0;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+/* LEFT NAVBAR  */
+.left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.left-nav ul{
+    display: flex;
+    gap: 10px;
+}
+.left-nav ul li{
+    list-style: none;
+}
+.left-nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 13px
+}
+.logo img{
+    height: 40px;
+}
+/* RIGHT NAVBAR  */
+.right-nav button{
+    padding: 6px 9px;
+    border-radius: 8px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* MAIN IMAGE  */
+.main-img{
+    /* background: #afa7a7; */
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-img::before {
+    content: "";
+    background-image: url("img/pexels-photo-1813272.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    z-index: -1;
+}
+.main-img span{
+    color: #211343;
+    font-size: 18px;
+    font-weight: bold;
+}
+.salon-div{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-block: 20px;
+}
+.salon-images{
+    display: flex;
+    justify-content: space-around;
+}
+.salon-img{
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.salon-images :nth-child(1){
+    background-image: url(img/pexels-photo-2318055.jpeg);
+    background-size: cover;
+}
+.salon-images :nth-child(2){
+    background-image: url(img/pexels-photo-3993293.jpeg);
+    background-size: cover;
+}
+.salon-images :nth-child(3){
+    background-image: url(img/pexels-hikaique-331989\ \(2\).jpg);
+    background-size: cover;
+}
+
+.services-div{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-block: 20px;
+}
+
+.services-images{
+    display: flex;
+    justify-content: space-around;
+}
+.services-img{
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.services-images :nth-child(1){
+    background-image: url(img/pexels-photo-2318055.jpeg);
+    background-size: cover;
+}
+.services-images :nth-child(2){
+    background-image: url(img/pexels-photo-3993293.jpeg);
+    background-size: cover;
+}
+.services-images :nth-child(3){
+    background-image: url(img/pexels-hikaique-331989\ \(2\).jpg);
+    background-size: cover;
+}
