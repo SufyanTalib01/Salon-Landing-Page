@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-container">
         <!-- NAVBAR  -->
-            <nav>
-                <div class="left-nav">
-                    <img class="logo-img" src="img/logo-removebg-preview.png" alt="">
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li><a href="">Price lists</a></li>
-                            <li><a href="">Deals</a></li>
-                            <li><a href="">Grooms</a></li>
-                            <li><a href="">Contact us</a></li>
-                        </ul>
-                    </div>
+        <nav>
+            <div class="left-nav">
+                <img class="logo-img" src="img/logo-removebg-preview.png" alt="">
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li><a href="">Price lists</a></li>
+                        <li><a href="">Deals</a></li>
+                        <li><a href="">Grooms</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
                 </div>
-                <div class="right-nav">
-                    <button>Booking now</button>
-                </div>
-            </nav>
-            <section>
-                <!-- MAIN IMAGE DIV  -->
-                <div class="main-img">
-                    <span>Your Beauty, Our Passion</span>
-                </div>
-                <!-- SALON PIC  -->
-                <div class="salon-div">
-                    <span>NEW GENERATION BARBER</span></div>
-                <!-- Salon Images  -->
-                 <div class="salon-images">
-                    <div class="salon-img"></div>
-                    <div class="salon-img"></div>
-                    <div class="salon-img"></div>
-                 </div>
-                 <!-- SERVICES PICS  -->
-                <div class="services-div"><span>
-                    SERVICES 
+            </div>
+            <div class="right-nav">
+                <button>Booking now</button>
+            </div>
+        </nav>
+        <section>
+            <!-- MAIN IMAGE DIV  -->
+            <div class="main-img">
+                <!-- <span>Your Beauty, Our Passion</span> -->
+            </div>
+            <!-- SALON PIC  -->
+            <div class="heading">
+                <span>NEW GENERATION BARBER</span>
+            </div>
+            <!-- Salon Images  -->
+            <div class="salon-images">
+                <div class="salon-img"></div>
+                <div class="salon-img"></div>
+                <div class="salon-img"></div>
+            </div>
+            <!-- SERVICES PICS  -->
+            <div class="heading"><span>
+                    SERVICES
                 </span></div>
-                <!-- Salon Images  -->
-                 <div class="services-images">
-                    <div class="services-img"></div>
-                    <div class="services-img"></div>
-                    <div class="services-img"></div>
-                 </div>
-                 <!-- DEAL & PACKAGES  -->
-                  <div class="deals"><span>
+            <!-- Salon Images  -->
+            <div class="services-images">
+                <div class="services-img"></div>
+                <div class="services-img"></div>
+                <div class="services-img"></div>
+            </div>
+            <!-- DEAL & PACKAGES  -->
+            <div class="heading"><span>
                     DEALS & PACKAGES
-                  </span></div>
-                  <div class="deals-div">
-                    <button onclick="Controller(-1)">&#8249;</button>                    
-                    <div class="slide">
-                        <img src="img/deals/deal1.PNG" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="img/deals/deal2.PNG" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="img/deals/deal3.PNG" alt="">
-                    </div>
-                    <button onclick="Controller(1)">&#8250;</button>
-                  </div>
+                </span></div>
+            <div class="deals-div">
+                <button onclick="Controller(-1)">&#8249;</button>
+                <div class="slide">
+                    <img src="img/deals/deal1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/deals/deal2.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/deals/deal3.PNG" alt="">
+                </div>
+                <button onclick="Controller(1)">&#8250;</button>
+            </div>
+            <div class="heading"><span>CONTACT US</span></div>
 
+            <div class="contact-us">
+                
+                    <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last name">
+                <input type="text" placeholder="Phone number">
+                <textarea rows="5" placeholder="Message" name="" id=""></textarea>
+                <button>SUBMIT</button>
 
-            </section>
-            <footer>
-
-            </footer>
+            </div>
+        </section>
+        <footer>
+            <hr>
+            <div class="social-icons">
+                <img src="img/facebook_145802.png"  alt="">
+                <img src="img/instagram_2111463.png" alt="">
+                <img src="img/twitter.png" alt="">
+                <img src="img/youtube_4494485.png" alt="">
+            </div>
+            <div class="copyright-text">
+                <span>© Copyright 2021 All Rights Reserved by Salon.PK | Developed by Sufyan
+                </span>
+            </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
