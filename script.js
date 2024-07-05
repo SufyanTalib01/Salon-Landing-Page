@@ -1,17 +1,27 @@
-let DealsImages = document.querySelectorAll('deals-img');
+let Flag = 0;
 
-let SlideIndex = 0;
-// DealsImages[SlideIndex].classList.add('active');
-
-// function GoNext(){
-
-//     DealsImages[SlideIndex].classList.remove('active');
-//     SlideIndex = (SlideIndex === DealsImages.length - 1) ? 0 : SlideIndex + 1;
-//     DealsImages[SlideIndex].classList.add('active');
-//     DealsImages.style.transform = `translateX(-${SlideCount * 100}%)`;
-    
-// }
-
-function GoNext(){
-    DealsImages.style.transform = 'translateX(-100%)';
+function Controller(x){
+    Flag = Flag + x;
+    Slideshow(Flag);
 }
+
+function Slideshow(num){
+    let Slides = document.getElementsByClassName('slide');
+
+    if(num === Slides.length){
+        Flag = 0;
+        num = 0;
+    }
+    if(num < 0){
+        Flag = Slides.length - 1;
+        num = Slides.length - 1;
+    }
+
+    for(let y of Slides){
+        y.style.display = 'none';
+    }
+    Slides[num].style.display = "block";
+
+    
+}
+Slideshow(Flag);
