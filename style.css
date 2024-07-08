@@ -15,7 +15,7 @@
     0px 18px 23px rgba(0,0,0,0.1);
 cursor: pointer;
 font-weight: bold;
-font-size: 3.6vh;
+font-size: 18px;
 }
 .main-container{
     display: flex;
@@ -80,7 +80,7 @@ section{
 }
 .main-img{
     /* background: #afa7a7; */
-    height: 60vh;
+    height: 403px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -109,10 +109,12 @@ section{
     display: flex;
     justify-content: center;
     gap: 32px;
+    align-items: center;
+    height: 500px;
 }
 .salon-img{
-    height: 85vh;
-    width: 25vw;
+    height: 96%;
+    width: 25%;
     border-radius: 10px;
     background-color: gray;
     transition: transform 0.2s ease-in-out;
@@ -138,19 +140,17 @@ section{
     background-position: center;
 
 }
-
-
 /* SALON SERVICES DIV  */
-
-
 .services-images{
     display: flex;
     justify-content: center;
     gap: 32px;
+    align-items: center;
+    height: 500px;
 }
 .services-img{
-    height: 85vh;
-    width: 25vw;
+    height: 96%;
+    width: 25%;
     border-radius: 10px;
     background-color: gray;
     transition: transform 0.2s ease-in-out;
@@ -284,6 +284,12 @@ footer hr{
        height: auto;
        width: auto;;
     }
+    .salon-images{
+        height: 400px;
+    }
+    .services-images{
+        height: 400px;
+    }
 }
 @media (max-width: 426px){
 
@@ -298,17 +304,21 @@ footer hr{
         display: block;
         font-size: 20px;
     }
+    .heading{
+        padding-block: 8px;
+    }
     .heading span{
-        font-size: 3.1vh;
+        font-size: 14px;
     }
     
     /* SALON DIV  */
-    .salon-img{
-        height: 40vh;
+    
+    .salon-images{
+        height: 210px;
     }
     /* SERVICES  */
-    .services-img{
-        height: 40vh;
+    .services-images{
+        height: 210px;
     }
     /* DEALS  */
     .deals-div{
