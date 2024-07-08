@@ -71,6 +71,9 @@ nav{
     cursor: pointer;
     font-size: 11px;
 }
+.right-nav i{
+    display: none;
+}
 /* MAIN IMAGE  */
 section{
     flex-grow: 1;
@@ -276,5 +279,57 @@ footer hr{
 @media (max-width: 768px){
     .deals-div{
         width: 75%;
+    }
+    .slide{
+       height: auto;
+       width: auto;;
+    }
+}
+@media (max-width: 426px){
+
+    /* NAVBAR  */
+    .left-nav ul{
+        display: none;
+    }
+    .right-nav button{
+        display: none;
+    }
+    #sidebar-icon{
+        display: block;
+        font-size: 20px;
+    }
+    .heading span{
+        font-size: 3.1vh;
+    }
+    
+    /* SALON DIV  */
+    .salon-img{
+        height: 40vh;
+    }
+    /* SERVICES  */
+    .services-img{
+        height: 40vh;
+    }
+    /* DEALS  */
+    .deals-div{
+        width: 100%;
+    }
+    /* CONTACT US  */
+    .contact-us{
+        width: 90%;
+        height: 391px;
+    }
+    .contact-us input{
+        height: 30px;
+    }
+    .contact-us button{
+        padding: 0px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 376px){
+    .main-img::before{
+        background-position: center;
     }
 }
