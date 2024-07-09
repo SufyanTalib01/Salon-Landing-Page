@@ -1,3 +1,36 @@
+let ServicesImageId1 = document.getElementById("services-img-id-1");
+let ServicesImageId2 = document.getElementById("services-img-id-2");
+let ServicesImageId3 = document.getElementById("services-img-id-3");
+let ServicesDetail1 = document.getElementById("services-detail-1");
+let ServicesDetail2 = document.getElementById("services-detail-2");
+let ServicesDetail3 = document.getElementById("services-detail-3");
+
+// SERVICES IMAGE 1 
+ServicesImageId1.addEventListener("mouseover" , function (){
+ServicesDetail1.style.transform = 'translateY(-100%)';
+})
+
+ServicesImageId1.addEventListener("mouseout" , function(){
+    ServicesDetail1.style.transform = 'translateY(0)';
+})
+// SERVICES IMAGE 2 
+ServicesImageId2.addEventListener("mouseover" , function (){
+    ServicesDetail2.style.transform = 'translateY(-100%)';
+    })
+    
+    ServicesImageId2.addEventListener("mouseout" , function(){
+        ServicesDetail2.style.transform = 'translateY(0)';
+    })
+// SERVICES IMAGE 3
+ServicesImageId3.addEventListener("mouseover" , function (){
+    ServicesDetail3.style.transform = 'translateY(-100%)';
+    })
+    
+    ServicesImageId3.addEventListener("mouseout" , function(){
+        ServicesDetail3.style.transform = 'translateY(0)';
+    })
+
+
 let Flag = 0;
 
 function Controller(x){
