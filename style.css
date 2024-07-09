@@ -5,17 +5,19 @@
     font-family: "Inknut Antiqua", serif;
 
 }
+body{
+    background-color: #383838;
+}
 .heading{
     text-align: center;
     padding-block: 20px;
+    color: orange;
 }
 .heading span{
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-    0px 8px 13px rgba(0,0,0,0.1),
-    0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.41);
 cursor: pointer;
 font-weight: bold;
-font-size: 18px;
+font-size: 20px;
 }
 .main-container{
     display: flex;
@@ -77,6 +79,7 @@ nav{
 /* MAIN IMAGE  */
 section{
     flex-grow: 1;
+   
 }
 .main-img{
     /* background: #afa7a7; */
@@ -111,70 +114,95 @@ section{
     gap: 32px;
     align-items: center;
     height: 500px;
+    width: 76%;
+    margin: 32px;
+    margin-inline: auto;
 }
-.salon-img{
+.salon-images img{
+    height: 96%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.about h2{
+    text-align: center;
+    color: orange;
+}
+.about span{
+    color: white;
+}
+/* .salon-img{
     height: 96%;
     width: 25%;
     border-radius: 10px;
     background-color: gray;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-}
-.salon-img:hover{
+} */
+.salon-images img:hover{
     transform: scale(1.01);
 }
-.salon-images :nth-child(1){
-    background-image: url(img/pexels-photo-2318055.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-.salon-images :nth-child(2){
-    background-image: url(img/pexels-photo-3993293.jpeg);
-    background-size: cover;
-    background-position: center;
 
-}
-.salon-images :nth-child(3){
-    background-image: url(img/pexels-hikaique-331989\ \(2\).jpg);
-    background-size: cover;
-    background-position: center;
 
-}
 /* SALON SERVICES DIV  */
+
 .services-images{
     display: flex;
     justify-content: center;
     gap: 32px;
     align-items: center;
     height: 500px;
+    overflow: hidden;
 }
 .services-img{
-    height: 96%;
-    width: 25%;
-    border-radius: 10px;
-    background-color: gray;
-    transition: transform 0.2s ease-in-out;
+    height: 100%;
+    position: relative;
     cursor: pointer;
 }
-.services-img:hover{
-    transform: scale(1.01);
+.services-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+    transition: transform 1s;
+    /* transform: translateY(-700px); */
+    cursor: pointer;
+    /* display: none; */
 }
-.services-images :nth-child(1){
-    background-image: url("img/pexels-photo-4969866.webp");
-    background-size: cover;
-    background-position: center;
+.services-img img:hover{
+    /* transform: scale(1.01); */
+    transform: translateY(-700px);
 }
-.services-images :nth-child(2){
-    background-image: url("img/pexels-photo-2068672.webp");
-    background-size: cover;
-    background-position: center;
-}
-.services-images :nth-child(3){
-    background-image: url("img/pexels-photo-1813346.jpeg");
-    background-size: cover;
-    background-position: center;
+.services-detail{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+background-color: #1F1F1F;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    padding-block: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* position: absolute; */
+    justify-content: center;
+    gap: 23px;
 
 }
+.services-detail h2{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+
+}
+.services-detail ul{
+    margin-inline: 54px;
+}
+
 /* DEAL N PACKAGES  */
 .deals-div{
     width: 56%;
@@ -191,7 +219,41 @@ width: 600px;
 margin: auto;
 border-radius: 10px;
 overflow: hidden;
+/* display: none; */
+background-color: #1F1F1F;
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; */
+align-content: center;
+padding-inline: 50px;
 display: none;
+}
+
+.slide div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block: 4px;
+    /* background-color: rebeccapurple; */
+    /* height: 100%; */
+}
+.slide div span{
+    font-size: 21px;
+}
+.name{
+    color: white;
+}
+.price{
+    color: #C0814F;
+}
+.slide-heading{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 .slide img{
     height: auto;
@@ -208,9 +270,10 @@ display: none;
     font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
     border: none;
+    color: white;
 }
 .deals-div button:hover{
-    background-color: rgb(180, 178, 178);
+    background-color: rgb(48, 45, 45);
 
 }
 
@@ -218,10 +281,10 @@ display: none;
 .contact-us{
 margin-top: 20px;
 height: 450px;
-width: 500px;
+width: 600px;
 margin: auto;
 border-radius: 10px;
-background: gray;
+background: #C7C0C0;
 display: flex;
 flex-direction: column;
 gap: 25px;
@@ -230,10 +293,25 @@ align-items: center;
 }
 .contact-us input{
     width: 80%;
+    border: 1px solid white;
     outline: none;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     height: 40px;
+    background-color: #6D6969;
+    color: white;
+    border-radius: 5px;
+}
+.contact-us input::placeholder , .contact-us textarea::placeholder{
+    color: white;
+}
+.contact-us input:focus , .contact-us textarea:focus{
+    border: 1px solid black;
+    background-color: #989696;
+}
+.contact-us input:hover , .contact-us textarea:hover{
+    background-color: #989696;
+    border: 1px solid black;
 }
 .contact-us textarea{
     width: 80%;
@@ -241,7 +319,12 @@ align-items: center;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
+    background-color: #6D6969;
+    color: white;
+    border-radius: 5px;
+
 }
+
 .contact-us button{
     padding: 0px 35px;
     border-radius: 20px;
@@ -250,6 +333,9 @@ align-items: center;
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+.contact-us button:active{
+    background-color: rgb(138, 137, 137);
 }
 /* FOOTER DATA  */
 
@@ -273,6 +359,7 @@ footer hr{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+    color: white;
 }
 
 
@@ -291,7 +378,7 @@ footer hr{
         height: 400px;
     }
 }
-@media (max-width: 426px){
+@media (max-width: 470px){
 
     /* NAVBAR  */
     .left-nav ul{
