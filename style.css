@@ -195,6 +195,7 @@ transition: transform 0.3s ease-in;
     height: 100%;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .services-img img{
     height: 100%;
@@ -207,7 +208,7 @@ transition: transform 0.3s ease-in;
 .services-detail{
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 background-color: #1F1F1F;
     position: absolute;
     top: 100%;
@@ -339,10 +340,11 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 }
 .contact-us input:focus , .contact-us textarea:focus{
     border: 1px solid orange;
-    background-color: #989696;
+    background-color: #807d7d;
+
 }
 .contact-us input:hover , .contact-us textarea:hover{
-    background-color: #989696;
+    background-color: #807d7d;
     border: 1px solid orange;
 
 }
@@ -430,13 +432,13 @@ footer hr{
         margin-left: 32px;
     }
     .deals-div{
-        width: 90%;
+        width: 97%;
     }
     .slide{
         width: 100%;
     }
     .contact-us{
-        width: 75%;
+        width: 80%;
     }
 }
 
@@ -466,25 +468,42 @@ footer hr{
         font-size: 14px;
     }
     .salon-images{
-        height: 233px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .salon-images img{
+        height: 315px;
+        width: 80%;
     }
     .about p{
-        font-size: 8px;
+        font-size: 9px;
+        text-align: center;
     }
     .about h2{
         font-size: 15px;
     }
     .services-detail h2{
-        font-size: 15px;
+        font-size: 20px;
     }
     .services-detail ul{
-        font-size: 7px;
+        font-size: 13px;
         margin-inline: 0px;
-        margin-left: 28px;
+        margin-left: 37px;
     }
     .services-images{
-        height: 229px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
     }
+    .services-img{
+        height: 380px;
+        width: 80%;
+        border-radius: 10px;
+    }
+    /* .services-img{
+        width: 80%;
+    } */
     .slide{
         padding-inline: 25px;
         height: 352px;
@@ -518,8 +537,8 @@ footer hr{
 /* MINI MOBILE  */
 @media (max-width: 330px){
 
-    .salon-images{
-        height: 186px;
+    .services-img{
+        height: 315px;
     }
     .about h2{
         font-size: 11px;
@@ -530,17 +549,15 @@ footer hr{
     .heading span{
         font-size: 11px;
     }
-    .services-images{
-        height: 160px;
-    }
+    
     .services-detail{
         gap: 2px;
     }
     .services-detail h2{
-        font-size: 11px;
+        font-size: 16px;
     }
     .services-detail ul{
-        font-size: 6px;
+        font-size: 10px;
     }
     .slide div span{
         font-size: 10px;
