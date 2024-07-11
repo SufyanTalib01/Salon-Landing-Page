@@ -92,6 +92,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: -2px;
+    overflow: hidden;
 }
 .main-img::before {
     content: "";
