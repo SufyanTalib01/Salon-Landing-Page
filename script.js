@@ -58,3 +58,20 @@ function Slideshow(num){
     
 }
 Slideshow(Flag);
+// SIDE BAR LOGICS
+let SidebarIcon = document.getElementById('sidebar-icon');
+let CloseIcon = document.getElementById('close-icon');
+let SideBar = document.getElementById('sidebar');
+
+SidebarIcon.addEventListener('click' , function(){
+    SideBar.style.transform = 'translateX(0)';
+    SidebarIcon.style.display = 'none';
+    CloseIcon.style.display = 'block';
+})
+
+CloseIcon.addEventListener('click' , function(){
+    SideBar.style.transform = 'translateX(100%)';
+    SidebarIcon.style.display = 'block';
+    CloseIcon.style.display = 'none';
+})
+
