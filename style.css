@@ -109,18 +109,56 @@ section{
 .sidebar{
 height: 100%;
 width: 100%;
-background: gray;
-text-align: center;
+background: #e3e3e3;
+/* text-align: center; */
 overflow: hidden;
 transform: translateX(100%);
 transition: transform 0.3s ease-in;
 /* display: none; */
 }
-.home{
+.home-li{
     margin-top: 12px;
+    /* margin-right: 6px; */
+    margin-right: 2px;
+}
+.sidebar-li{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.home-a{
+    margin-left: 6px;
+}
+#price{
+    margin-top: -10px;
+    font-size: 19px;
+    padding-right: 7px;
+    padding-left: 4px;
+}
+#deals{
+    margin-top: -10px;
+    font-size: 17px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+#grooms{
+    margin-top: -10px;
+    font-size: 17px;
+    padding-right: 2px;
+    padding-left: 4px;
+}
+#contact{
+    margin-top: -10px;
+    font-size: 17px;
+    padding-right: 2px;
+    padding-left: 4px;
+}
+.sidebar ul{
+    margin-left: 15px;
 }
 .sidebar ul li{
     margin-bottom: 10px;
+    list-style: none;
 }
 .sidebar ul li a{
     text-decoration: none;
@@ -129,8 +167,14 @@ transition: transform 0.3s ease-in;
 .sidebar ul li a:hover{
     color: orange;
 }
+.m-booking-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sidebar button{
-    padding: 2px 25px;
+    padding: 3px 35px;
     border-radius: 8px;
     border: none;
     background: orange;
@@ -140,6 +184,7 @@ transition: transform 0.3s ease-in;
     font-size: 12px;
     margin-top: 10px;
 }
+
 /* SALON PICS DIV  */
 
 .salon-images{
@@ -532,6 +577,9 @@ footer hr{
     .social-icons span{
         font-size: 7px;
     }
+    .copyright-text span{
+        font-size: 9px;
+    }
 }
 
 /* MINI MOBILE  */
@@ -561,5 +609,8 @@ footer hr{
     }
     .slide div span{
         font-size: 10px;
+    }
+    .copyright-text span{
+        font-size: 6px;
     }
 }
