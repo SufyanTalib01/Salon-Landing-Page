@@ -517,7 +517,7 @@ footer hr{
         flex-wrap: wrap;
     }
     .salon-images img{
-        height: 315px;
+        height: 394px;
         width: 80%;
     }
     .about p{
@@ -584,7 +584,9 @@ footer hr{
 
 /* MINI MOBILE  */
 @media (max-width: 330px){
-
+    .salon-images img{
+        height: 315px;
+    }
     .services-img{
         height: 315px;
     }
