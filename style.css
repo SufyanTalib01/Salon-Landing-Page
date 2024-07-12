@@ -126,7 +126,7 @@ transition: transform 0.3s ease-in;
     align-items: center;
     gap: 23px;
 }
-.home-a{
+#home-a{
     margin-left: 6px;
 }
 #price{
